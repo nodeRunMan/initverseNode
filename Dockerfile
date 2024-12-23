@@ -4,9 +4,10 @@ FROM ubuntu:24.04
 ENV DEBIAN_FRONTEND=noninteractive
 
 # Update and install necessary dependencies
-RUN apt-get update && apt-get install -y \
+RUN dpkg --add-architecture amd64 && apt-get update && apt-get install -y \
     wget \
     screen \
+    libc6:amd64 \
     && apt-get clean \
     && rm -rf /var/lib/apt/lists/*
 

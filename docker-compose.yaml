@@ -11,12 +11,12 @@ services:
       replicas: 1
     platform: linux/amd64
 
-  miner2:
-    build:
-      context: .
-    container_name: miner2
-    environment:
-      - WALLET_ADDRESS=0x8ff44C9b5Eab5E5CE8d1d642184b70e9b9587F74
-    deploy:
-      replicas: 1
-    platform: linux/amd64
+#  miner2:
+#    build:
+#      context: .
+#    container_name: miner2
+#    environment:
+#      - WALLET_ADDRESS=0x8ff44C9b5Eab5E5CE8d1d642184b70e9b9587F74
+#    deploy:
+#      replicas: 1
+#    platform: linux/amd64

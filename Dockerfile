@@ -20,7 +20,7 @@ ENV WALLET_ADDRESS=0x8ff44C9b5Eab5E5CE8d1d642184b70e9b9587F74
 
 # Generate a unique worker name using the container hostname
 #ENV WORKER_NAME=$(hostname)
-ENV WORKER_NAME=miner1
+ENV WORKER_NAME=miner11
 
 # Expose the default mining port
 EXPOSE 32672
